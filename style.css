@@ -45,3 +45,17 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+.recommendation{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.recommendation input{
+    width:300px;
+    padding:12px;
+}
+
+.recommendation button{
+    padding:12px 20px;
+    cursor:pointer;
+}

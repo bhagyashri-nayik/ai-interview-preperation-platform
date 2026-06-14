@@ -77,13 +77,17 @@
         <div class="tool-card">
             <h3>ChatGPT</h3>
             <p>AI assistant for coding, learning, writing, and problem solving.</p>
-            <button>Learn More</button>
+             <a href="https://chatgpt.com/" target="_blank" class="learn-btn">
+    
+            <button>Learn More</button> </a>
         </div>
 
         <div class="tool-card">
             <h3>Gemini</h3>
             <p>Google's AI assistant for search, productivity, and creativity.</p>
-            <button>Learn More</button>
+            <a href="https://gemini.google.com/app?hl=en-IN" target="_blank" class="learn-btn">
+
+            <button>Learn More</button></a>
         </div>
 
         <div class="tool-card">
@@ -99,6 +103,18 @@
         </div>
 
     </div>
+</section>
+ <section class="recommendation">
+    <h2>Find the Best AI Tool</h2>
+
+    <input type="text" id="task"
+        placeholder="Example: Create a website">
+
+    <button onclick="recommendTool()">
+        Get Recommendation
+    </button>
+
+    <div id="result"></div>
 </section>
 <script src="script2.js"></script>
 </body>
