@@ -10,14 +10,20 @@ body{
 }
 
 .navbar{
-
     background-color: #2C3E50;
     color: rgb(18, 164, 232);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
 }
+
 .navbar a{
    text-decoration: none;
    color: rgb(235, 243, 235);
@@ -31,7 +37,7 @@ body{
     font-size:40px;
 }
 
-.hero button{
+.btn{
     padding:10px 20px;
     cursor:pointer;
 }
@@ -146,4 +152,69 @@ body{
 .recommendation button{
     padding:12px 20px;
     cursor:pointer;
+}
+.start-interview {
+    text-align: center;
+    padding: 80px 20px;
+    background: #d9f0f0;
+    margin-top: 50px;
+}
+
+.start-interview h2 {
+    font-size: 42px;
+    color: #4f8f96;
+    margin-bottom: 15px;
+}
+
+.start-interview p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.start-interview select {
+    width: 280px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4f8f96;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.start-interview button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #4f8f96;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-interview button:hover {
+    background: #356d73;
+    transform: translateY(-3px);
+}
+
+.start-interview button:active {
+    transform: scale(0.95);
+}
+.start-interview {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+html{
+    scroll-behavior: smooth;
 }
