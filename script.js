@@ -4,3 +4,13 @@ function square() {
     console.log(result);
 }
 square();
+
+function square(num) {
+    let result =num * num;
+    console.log(result);
+}
+square();
+
+function square() {
+    let
+}

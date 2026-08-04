@@ -29,3 +29,26 @@ function recommendTool() {
         "Recommended: ChatGPT";
     }
 }
+const questions = [
+    "Tell me about yourself.",
+    "What are your strengths?",
+    "What are your weaknesses?",
+    "Why should we hire you?",
+    "Where do you see yourself in 5 years?"
+];
+
+let index = 0;
+
+function startInterview() {
+    document.getElementById("question").innerHTML = questions[index];
+}
+
+function nextQuestion() {
+    index++;
+
+    if (index < questions.length) {
+        document.getElementById("question").innerHTML = questions[index];
+    } else {
+        document.getElementById("question").innerHTML = "Interview Completed!";
+    }
+}
